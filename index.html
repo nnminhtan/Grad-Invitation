@@ -115,15 +115,6 @@ Melvix
       background: radial-gradient(circle at top, #ff3b3b 0%, #b30000 45%, #5a0000 100%);
     } */
     
-    /* Center the ransomizer content */
-    #ransomizer-yzelv7xd .ts {
-      text-align: center;
-    }
-  
-    #ransomizer-yzelv7xd .tw {
-      display: inline-block;
-      text-align: center;
-    }
     /* ===== Full screen centering ===== */
     html, body {
       width: 100%;
@@ -139,10 +130,23 @@ Melvix
     
     /* keep the ransom content centered */
     #ransomizer-yzelv7xd {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 2rem;
     }
-
+     
+    /* Center the ransomizer content */
+    #ransomizer-yzelv7xd .ts {
+      text-align: center;
+    }
+  
+    #ransomizer-yzelv7xd .tw {
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+    }
+    
     .ransom-link {
       text-decoration: none;
       color: inherit;
@@ -471,6 +475,7 @@ you should move any <link> tags to the <head> of the document.
 <!-- <p class="footer">Made with The Ransomizer: <a href="https://www.ransomizer.com/">www.ransomizer.com</a></p> -->
 </body>
 </html>
+
 
 
 
