@@ -89,6 +89,16 @@ Melvix
     	border-collapse: collapse;
     	border-spacing: 0;
     }
+    
+    /* adding keyframes */
+    @keyframes subtleShake {
+      0%   { transform: translate(0, 0) rotate(0deg) scale(var(--scale)); }
+      20%  { transform: translate(-0.6px, 0.6px) rotate(-0.15deg) scale(var(--scale)); }
+      40%  { transform: translate(0.6px, -0.6px) rotate(0.15deg) scale(var(--scale)); }
+      60%  { transform: translate(-0.6px, -0.6px) rotate(-0.1deg) scale(var(--scale)); }
+      80%  { transform: translate(0.6px, 0.6px) rotate(0.1deg) scale(var(--scale)); }
+      100% { transform: translate(0, 0) rotate(0deg) scale(var(--scale)); }
+    }
 
     body {
       margin: 0;
@@ -146,7 +156,7 @@ Melvix
    #ransomizer-yzelv7xd {
       --scale: 1;
       animation: subtleShake 2.8s infinite ease-in-out;
-      transform: scale(var(--scale));
+      /* transform: scale(var(--scale)); */
     }
     
     @media (max-width: 768px) {
@@ -472,6 +482,7 @@ you should move any <link> tags to the <head> of the document.
 <!-- <p class="footer">Made with The Ransomizer: <a href="https://www.ransomizer.com/">www.ransomizer.com</a></p> -->
 </body>
 </html>
+
 
 
 
