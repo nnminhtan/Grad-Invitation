@@ -130,7 +130,7 @@ Melvix
         align-items: center;
         text-align: center;
         --scale: 1;
-        animation: subtleShake 3s infinite ease-in-out;
+        /* animation: subtleShake 3s infinite ease-in-out; */
       }
       
       #ransomizer-f0hi4tib .ts {
@@ -143,16 +143,38 @@ Melvix
         justify-content: center;
         align-items: center;
       }
+
+      #ransomizer-f0hi4tib .tc {
+        animation: pieceShake 2.6s infinite ease-in-out;
+      }
+
+    #ransomizer-f0hi4tib .tc:nth-child(2n) { animation-duration: 3.2s; }
+    #ransomizer-f0hi4tib .tc:nth-child(3n) { animation-duration: 2.1s; }
+    #ransomizer-f0hi4tib .tc:nth-child(4n) { animation-duration: 3.7s; }
+    #ransomizer-f0hi4tib .tc:nth-child(5n) { animation-duration: 2.4s; }
+
+    /* body.texturizer {
+      background: url("background.jpg") center center / cover no-repeat fixed;
+    } */
+
       
       /* ===================== ANIMATION ===================== */
-      @keyframes subtleShake {
+
+      @keyframes pieceShake {
+        0%   { transform: translate(0, 0) rotate(0deg); }
+        25%  { transform: translate(-0.8px, 0.6px) rotate(-0.4deg); }
+        50%  { transform: translate(0.7px, -0.6px) rotate(0.5deg); }
+        75%  { transform: translate(-0.5px, -0.4px) rotate(-0.3deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
+      }
+      /* @keyframes subtleShake {
         0%   { transform: translate(0, 0) rotate(0deg) scale(var(--scale)); }
         20%  { transform: translate(-0.6px, 0.6px) rotate(-0.15deg) scale(var(--scale)); }
         40%  { transform: translate(0.6px, -0.6px) rotate(0.15deg) scale(var(--scale)); }
         60%  { transform: translate(-0.6px, -0.6px) rotate(-0.1deg) scale(var(--scale)); }
         80%  { transform: translate(0.6px, 0.6px) rotate(0.1deg) scale(var(--scale)); }
         100% { transform: translate(0, 0) rotate(0deg) scale(var(--scale)); }
-      }
+      } */
       
       /* ===================== MOBILE SCALE ===================== */
       @media (max-width: 768px) {
@@ -484,6 +506,7 @@ you should move any <link> tags to the <head> of the document.
 <!-- <p class="footer">Made with The Ransomizer: <a href="https://www.ransomizer.com/">www.ransomizer.com</a></p> -->
 </body>
 </html>
+
 
 
 
