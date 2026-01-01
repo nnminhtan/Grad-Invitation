@@ -90,15 +90,6 @@ Melvix
     	border-spacing: 0;
     }
     
-    /* adding keyframes */
-    @keyframes subtleShake {
-      0%   { transform: translate(0, 0) rotate(0deg) scale(var(--scale)); }
-      20%  { transform: translate(-0.6px, 0.6px) rotate(-0.15deg) scale(var(--scale)); }
-      40%  { transform: translate(0.6px, -0.6px) rotate(0.15deg) scale(var(--scale)); }
-      60%  { transform: translate(-0.6px, -0.6px) rotate(-0.1deg) scale(var(--scale)); }
-      80%  { transform: translate(0.6px, 0.6px) rotate(0.1deg) scale(var(--scale)); }
-      100% { transform: translate(0, 0) rotate(0deg) scale(var(--scale)); }
-    }
 
     body {
       margin: 0;
@@ -152,20 +143,12 @@ Melvix
       padding: 2rem;
     }
 
-    /* shaky and scale for phone */
-   #ransomizer-yzelv7xd {
-      --scale: 1;
-      animation: subtleShake 2.8s infinite ease-in-out;
-      /* transform: scale(var(--scale)); */
+    .ransom-link {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
     }
-    
-    @media (max-width: 768px) {
-      #ransomizer-yzelv7xd { --scale: 0.85; }
-    }
-    
-    @media (max-width: 480px) {
-      #ransomizer-yzelv7xd { --scale: 0.75; }
-    }
+
 
   </style>
 </head>
@@ -473,15 +456,22 @@ you should move any <link> tags to the <head> of the document.
  <div class="tw"><div data-text="T" class="mlvx-86 tc" style=""><div data-text="T">T</div></div><div data-text="h" class="mlvx-87 tc" style=""><div data-text="h">h</div></div><div data-text="u" class="mlvx-88 tc" style=""><div data-text="u">u</div></div></div>
  <div class="tw"><div data-text="D" class="mlvx-90 tc" style=""><div data-text="D">D</div></div><div data-text="u" class="mlvx-91 tc" style=""><div data-text="u">u</div></div><div data-text="c" class="mlvx-92 tc" style=""><div data-text="c">c</div></div></div>
  <div class="tw"><div data-text="C" class="mlvx-94 tc" style=""><div data-text="C">C</div></div><div data-text="a" class="mlvx-95 tc" style=""><div data-text="a">a</div></div><div data-text="m" class="mlvx-96 tc" style=""><div data-text="m">m</div></div><div data-text="p" class="mlvx-97 tc" style=""><div data-text="p">p</div></div><div data-text="u" class="mlvx-98 tc" style=""><div data-text="u">u</div></div><div data-text="s" class="mlvx-99 tc" style=""><div data-text="s">s</div></div></div>
- <div class="tw"><div data-text="📍" class="mlvx-101 tc" style=""><div data-text="📍">📍</div></div></div>
-</div>
+  <a href="https://maps.app.goo.gl/2ZbCeMGVvW1xpb8j8" class="ransom-link">
+    <div class="tw">
+      <div data-text="📍" class="mlvx-101 tc">
+        <div data-text="📍">📍</div>
+      </div>
+    </div>
+  </a>
   </div>
-</div>
+    </div>
+  </div>
 
 <!-- ***END*** -->
 <!-- <p class="footer">Made with The Ransomizer: <a href="https://www.ransomizer.com/">www.ransomizer.com</a></p> -->
 </body>
 </html>
+
 
 
 
