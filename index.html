@@ -116,13 +116,16 @@ Melvix
       
       body.texturizer {
         min-height: 100vh;
+        padding: 6svh 4vw;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: sans-serif;
-        background: #000;
+        background: #eeeeea;
       }
-    
+        /* body.texturizer {
+          background: url("background.jpg") center center / cover no-repeat fixed;
+        } */
       /* ===================== RANSOM BLOCK ===================== */
       #ransomizer-f0hi4tib {
         display: flex;
@@ -153,10 +156,6 @@ Melvix
     #ransomizer-f0hi4tib .tc:nth-child(4n) { animation-duration: 3.7s; }
     #ransomizer-f0hi4tib .tc:nth-child(5n) { animation-duration: 2.4s; }
 
-    /* body.texturizer {
-      background: url("background.jpg") center center / cover no-repeat fixed;
-    } */
-
       
       /* ===================== ANIMATION ===================== */
 
@@ -177,14 +176,21 @@ Melvix
       } */
       
       /* ===================== MOBILE SCALE ===================== */
+      #ransomizer-f0hi4tib {
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(var(--scale));
+      }
+      
+      /* Phone tuning */
       @media (max-width: 768px) {
-        #ransomizer-f0hi4tib { --scale: 0.85; }
+        #ransomizer-f0hi4tib { --scale: 0.9; }
       }
       
       @media (max-width: 480px) {
-        #ransomizer-f0hi4tib { --scale: 0.75; }
+        #ransomizer-f0hi4tib { --scale: 0.8; }
       }
-
+    
   </style>
 </head>
 <body class="texturizer">
@@ -506,6 +512,7 @@ you should move any <link> tags to the <head> of the document.
 <!-- <p class="footer">Made with The Ransomizer: <a href="https://www.ransomizer.com/">www.ransomizer.com</a></p> -->
 </body>
 </html>
+
 
 
 
